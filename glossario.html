@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <script src="js/tailwind-plugins.js"></script>
+
+        <link rel="icon" href="images/logo.png" />
+
+        <title>famacode</title>
+
+        <style>
+            .altezza {
+                height: calc(100vh - 176px);
+            }
+        </style>
+    </head>
+    <body>
+        <main class="flex bg-gray-100 dark:bg-gray-800">
+            <div
+                class="flex h-screen w-16 flex-col justify-between border-e border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 fixed top-0 z-50"
+            >
+                <div>
+                    <div
+                        class="inline-flex h-16 w-16 items-center justify-center"
+                    >
+                        <span
+                            class="grid h-10 w-10 place-content-center rounded-lg bg-gray-100 text-xs text-gray-600"
+                        >
+                            <img
+                                class="h-10 w-10 block dark:hidden"
+                                src="images/logo.png"
+                                alt="farmacode logo"
+                            />
+                            <img
+                                class="h-10 w-10 hidden dark:block"
+                                src="images/logo-dark.png"
+                                alt="farmacode logo"
+                            />
+                        </span>
+                    </div>
+
+                    <div class="border-t border-gray-200 dark:border-gray-700">
+                        <div class="px-2">
+                            <div class="py-4">
+                                <a
+                                    href="#home"
+                                    class="t group relative flex justify-center rounded bg-red-100 dark:bg-red-700 px-2 py-1.5 text-red-700 dark:text-red-100"
+                                >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke-width="2"
+                                        stroke="currentColor"
+                                        class="h-5 w-5 opacity-75"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+                                        />
+                                    </svg>
+
+                                    <span
+                                        class="absolute start-full top-1/2 ms-4 -translate-y-1/2 rounded bg-gray-900 px-2 py-1.5 text-xs font-medium text-white opacity-0 group-hover:opacity-100"
+                                    >
+                                        Home
+                                    </span>
+                                </a>
+                            </div>
+
+                            <ul
+                                class="space-y-1 border-t border-gray-200 dark:border-gray-700 py-4 overflow-y-auto overflow-x-hidden altezza"
+                            >
+                                <li>
+                                    <a
+                                        href="#a"
+                                        class="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-gray-700 dark:hover:text-gray-100"
+                                    >
+                                        A
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#b"
+                                        class="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-gray-700 dark:hover:text-gray-100"
+                                    >
+                                        B
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#c"
+                                        class="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-gray-700 dark:hover:text-gray-100"
+                                    >
+                                        C
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#d"
+                                        class="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-gray-700 dark:hover:text-gray-100"
+                                    >
+                                        D
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#e"
+                                        class="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-gray-700 dark:hover:text-gray-100"
+                                    >
+                                        E
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#f"
+                                        class="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-gray-700 dark:hover:text-gray-100"
+                                    >
+                                        F
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#g"
+                                        class="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-gray-700 dark:hover:text-gray-100"
+                                    >
+                                        G
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#h"
+                                        class="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-gray-700 dark:hover:text-gray-100"
+                                    >
+                                        H
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#i"
+                                        class="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-gray-700 dark:hover:text-gray-100"
+                                    >
+                                        I
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#j"
+                                        class="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-gray-700 dark:hover:text-gray-100"
+                                    >
+                                        J
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#k"
+                                        class="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-gray-700 dark:hover:text-gray-100"
+                                    >
+                                        K
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#l"
+                                        class="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-gray-700 dark:hover:text-gray-100"
+                                    >
+                                        L
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#m"
+                                        class="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-gray-700 dark:hover:text-gray-100"
+                                    >
+                                        M
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#n"
+                                        class="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-gray-700 dark:hover:text-gray-100"
+                                    >
+                                        N
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#o"
+                                        class="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-gray-700 dark:hover:text-gray-100"
+                                    >
+                                        O
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#p"
+                                        class="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-gray-700 dark:hover:text-gray-100"
+                                    >
+                                        P
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#q"
+                                        class="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-gray-700 dark:hover:text-gray-100"
+                                    >
+                                        Q
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#r"
+                                        class="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-gray-700 dark:hover:text-gray-100"
+                                    >
+                                        R
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#s"
+                                        class="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-gray-700 dark:hover:text-gray-100"
+                                    >
+                                        S
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#t"
+                                        class="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-gray-700 dark:hover:text-gray-100"
+                                    >
+                                        T
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#u"
+                                        class="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-gray-700 dark:hover:text-gray-100"
+                                    >
+                                        U
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#v"
+                                        class="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-gray-700 dark:hover:text-gray-100"
+                                    >
+                                        V
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#w"
+                                        class="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-gray-700 dark:hover:text-gray-100"
+                                    >
+                                        W
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#x"
+                                        class="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-gray-700 dark:hover:text-gray-100"
+                                    >
+                                        X
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#y"
+                                        class="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-gray-700 dark:hover:text-gray-100"
+                                    >
+                                        Y
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#z"
+                                        class="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-gray-700 dark:hover:text-gray-100"
+                                    >
+                                        Z
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="sticky inset-x-0 bottom-0 border-t border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 p-2"
+                >
+                    <form action="../index.html">
+                        <button
+                            type="submit"
+                            class="group relative flex w-full justify-center rounded-lg px-2 py-1.5 text-sm bg-red-100 dark:bg-red-700 text-red-700 dark:text-red-100 hover:bg-red-300 dark:hover:bg-red-900"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-5 w-5 opacity-75"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                                stroke-width="2"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"
+                                />
+                            </svg>
+
+                            <span
+                                class="absolute start-full top-1/2 ms-4 -translate-y-1/2 rounded bg-gray-900 px-2 py-1.5 text-xs font-medium text-white opacity-0 group-hover:opacity-100"
+                            >
+                                Torna indietro
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div
+                class="flex ml-16 w-full h-screen flex-col overflow-y-auto scroll-smooth"
+                id="glossario-main"
+            >
+                <header
+                    class="bg-white dark:bg-gray-900 sticky top-0 z-50 w-full border-b border-gray-200 dark:border-gray-700"
+                >
+                    <div class="px-4 sm:px-6 lg:px-8">
+                        <div
+                            class="flex h-16 items-center sm:justify-between justify-center"
+                        >
+                            <p class="dark:text-white text-lg hidden sm:block">
+                                Glossario
+                            </p>
+
+                            <div>
+                                <label for="search-input" class="sr-only">
+                                    Cerca vocabolo...
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="search-input"
+                                    placeholder="Cerca vocabolo"
+                                    class="rounded-md border-gray-200 py-2.5 pe-10 shadow-sm dark:border-gray-700 dark:bg-gray-800 dark:text-white sm:text-sm focus:outline-none focus:ring focus:ring-red-200 dark:focus:ring-red-700 focus:border-red-200 dark:focus:border-red-700"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <section
+                    class="bg-gray-100 dark:bg-gray-800 dark:text-white pt-12 md:pt-6"
+                    id="home"
+                >
+                    <div class="px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
+                        <div class="max-w-xl">
+                            <h2 class="text-3xl font-bold sm:text-4xl">
+                                Introduzione
+                            </h2>
+                        </div>
+
+                        <div class="mt-4 md:mt-8 space-y-6">
+                            Il presente documento si pone lo scopo di
+                            individuare le terminologie del progetto e
+                            facilitare la comprensione all’esterno e agli stessi
+                            membri del gruppo di tutti i termini specifici del
+                            caso, facilitando e migliorando la comunicazione con
+                            il proponente stesso. In particolare, si propone una
+                            struttura alfabetica, tale da monitorare facilmente
+                            terminologie.
+                        </div>
+                    </div>
+                </section>
+
+                <section
+                    class="bg-white dark:bg-gray-900 dark:text-white pt-12 md:pt-6"
+                    id="a"
+                >
+                    <div class="px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
+                        <div class="max-w-xl">
+                            <h2 class="text-3xl font-bold sm:text-4xl">A</h2>
+                        </div>
+
+                        <div class="mt-4 md:mt-8 space-y-6"></div>
+                    </div>
+                </section>
+
+                <section
+                    class="bg-gray-100 dark:bg-gray-800 dark:text-white pt-12 md:pt-6"
+                    id="b"
+                >
+                    <div class="px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
+                        <div class="max-w-xl">
+                            <h2 class="text-3xl font-bold sm:text-4xl">B</h2>
+                        </div>
+
+                        <div class="mt-4 md:mt-8 space-y-6"></div>
+                    </div>
+                </section>
+
+                <section
+                    class="bg-white dark:bg-gray-900 dark:text-white pt-12 md:pt-6"
+                    id="c"
+                >
+                    <div class="px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
+                        <div class="max-w-xl">
+                            <h2 class="text-3xl font-bold sm:text-4xl">C</h2>
+                        </div>
+
+                        <div class="mt-4 md:mt-8 space-y-6">
+                            <div>
+                                <h3
+                                    class="text-xl font-bold sm:text-2xl pt-20 keyword"
+                                >
+                                    Capitolato
+                                </h3>
+                                <p>
+                                    Documento privato tra chi commissiona il
+                                    lavoro e il gruppo (ditta) che lo esegue, in
+                                    cui viene esposto un problema che il
+                                    proponente necessita di risolvere e
+                                    specifica le norme e vari vincoli da
+                                    rispettare per lo sviluppo del specifico
+                                    prodotto software.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section
+                    class="bg-gray-100 dark:bg-gray-800 dark:text-white pt-12 md:pt-6"
+                    id="d"
+                >
+                    <div class="px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
+                        <div class="max-w-xl">
+                            <h2 class="text-3xl font-bold sm:text-4xl">D</h2>
+                        </div>
+
+                        <div class="mt-4 md:mt-8 space-y-6"></div>
+                    </div>
+                </section>
+
+                <section
+                    class="bg-white dark:bg-gray-900 dark:text-white pt-12 md:pt-6"
+                    id="e"
+                >
+                    <div class="px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
+                        <div class="max-w-xl">
+                            <h2 class="text-3xl font-bold sm:text-4xl">E</h2>
+                        </div>
+
+                        <div class="mt-4 md:mt-8 space-y-6"></div>
+                    </div>
+                </section>
+
+                <section
+                    class="bg-gray-100 dark:bg-gray-800 dark:text-white pt-12 md:pt-6"
+                    id="f"
+                >
+                    <div class="px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
+                        <div class="max-w-xl">
+                            <h2 class="text-3xl font-bold sm:text-4xl">F</h2>
+                        </div>
+
+                        <div class="mt-4 md:mt-8 space-y-6"></div>
+                    </div>
+                </section>
+
+                <section
+                    class="bg-white dark:bg-gray-900 dark:text-white pt-12 md:pt-6"
+                    id="g"
+                >
+                    <div class="px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
+                        <div class="max-w-xl">
+                            <h2 class="text-3xl font-bold sm:text-4xl">G</h2>
+                        </div>
+
+                        <div class="mt-4 md:mt-8 space-y-6"></div>
+                    </div>
+                </section>
+
+                <section
+                    class="bg-gray-100 dark:bg-gray-800 dark:text-white pt-12 md:pt-6"
+                    id="h"
+                >
+                    <div class="px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
+                        <div class="max-w-xl">
+                            <h2 class="text-3xl font-bold sm:text-4xl">H</h2>
+                        </div>
+
+                        <div class="mt-4 md:mt-8 space-y-6"></div>
+                    </div>
+                </section>
+
+                <section
+                    class="bg-white dark:bg-gray-900 dark:text-white pt-12 md:pt-6"
+                    id="i"
+                >
+                    <div class="px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
+                        <div class="max-w-xl">
+                            <h2 class="text-3xl font-bold sm:text-4xl">I</h2>
+                        </div>
+
+                        <div class="mt-4 md:mt-8 space-y-6"></div>
+                    </div>
+                </section>
+
+                <section
+                    class="bg-gray-100 dark:bg-gray-800 dark:text-white pt-12 md:pt-6"
+                    id="j"
+                >
+                    <div class="px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
+                        <div class="max-w-xl">
+                            <h2 class="text-3xl font-bold sm:text-4xl">J</h2>
+                        </div>
+
+                        <div class="mt-4 md:mt-8 space-y-6"></div>
+                    </div>
+                </section>
+
+                <section
+                    class="bg-white dark:bg-gray-900 dark:text-white pt-12 md:pt-6"
+                    id="k"
+                >
+                    <div class="px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
+                        <div class="max-w-xl">
+                            <h2 class="text-3xl font-bold sm:text-4xl">K</h2>
+                        </div>
+
+                        <div class="mt-4 md:mt-8 space-y-6"></div>
+                    </div>
+                </section>
+
+                <section
+                    class="bg-gray-100 dark:bg-gray-800 dark:text-white pt-12 md:pt-6"
+                    id="l"
+                >
+                    <div class="px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
+                        <div class="max-w-xl">
+                            <h2 class="text-3xl font-bold sm:text-4xl">L</h2>
+                        </div>
+
+                        <div class="mt-4 md:mt-8 space-y-6"></div>
+                    </div>
+                </section>
+
+                <section
+                    class="bg-white dark:bg-gray-900 dark:text-white pt-12 md:pt-6"
+                    id="m"
+                >
+                    <div class="px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
+                        <div class="max-w-xl">
+                            <h2 class="text-3xl font-bold sm:text-4xl">M</h2>
+                        </div>
+
+                        <div class="mt-4 md:mt-8 space-y-6"></div>
+                    </div>
+                </section>
+
+                <section
+                    class="bg-gray-100 dark:bg-gray-800 dark:text-white pt-12 md:pt-6"
+                    id="n"
+                >
+                    <div class="px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
+                        <div class="max-w-xl">
+                            <h2 class="text-3xl font-bold sm:text-4xl">N</h2>
+                        </div>
+
+                        <div class="mt-4 md:mt-8 space-y-6"></div>
+                    </div>
+                </section>
+
+                <section
+                    class="bg-white dark:bg-gray-900 dark:text-white pt-12 md:pt-6"
+                    id="o"
+                >
+                    <div class="px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
+                        <div class="max-w-xl">
+                            <h2 class="text-3xl font-bold sm:text-4xl">O</h2>
+                        </div>
+
+                        <div class="mt-4 md:mt-8 space-y-6"></div>
+                    </div>
+                </section>
+
+                <section
+                    class="bg-gray-100 dark:bg-gray-800 dark:text-white pt-12 md:pt-6"
+                    id="p"
+                >
+                    <div class="px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
+                        <div class="max-w-xl">
+                            <h2 class="text-3xl font-bold sm:text-4xl">P</h2>
+                        </div>
+
+                        <div class="mt-4 md:mt-8 space-y-6"></div>
+                    </div>
+                </section>
+
+                <section
+                    class="bg-white dark:bg-gray-900 dark:text-white pt-12 md:pt-6"
+                    id="q"
+                >
+                    <div class="px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
+                        <div class="max-w-xl">
+                            <h2 class="text-3xl font-bold sm:text-4xl">Q</h2>
+                        </div>
+
+                        <div class="mt-4 md:mt-8 space-y-6"></div>
+                    </div>
+                </section>
+
+                <section
+                    class="bg-gray-100 dark:bg-gray-800 dark:text-white pt-12 md:pt-6"
+                    id="r"
+                >
+                    <div class="px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
+                        <div class="max-w-xl">
+                            <h2 class="text-3xl font-bold sm:text-4xl">R</h2>
+                        </div>
+
+                        <div class="mt-4 md:mt-8 space-y-6"></div>
+                    </div>
+                </section>
+
+                <section
+                    class="bg-white dark:bg-gray-900 dark:text-white pt-12 md:pt-6"
+                    id="s"
+                >
+                    <div class="px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
+                        <div class="max-w-xl">
+                            <h2 class="text-3xl font-bold sm:text-4xl">S</h2>
+                        </div>
+
+                        <div class="mt-4 md:mt-8 space-y-6">
+                            <div>
+                                <h3
+                                    class="text-xl font-bold sm:text-2xl pt-20 keyword"
+                                >
+                                    Sistema di raccomandazione
+                                </h3>
+                                <p>
+                                    Un sistema di raccomandazione o motore di
+                                    raccomandazione è un software di filtraggio
+                                    dei contenuti che crea delle raccomandazioni
+                                    personalizzate specifiche per l’utente così
+                                    da aiutarlo nelle sue scelte. Viene
+                                    utilizzato per diversi prodotti, come libri,
+                                    musica, film, video, notizie e social media.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section
+                    class="bg-gray-100 dark:bg-gray-800 dark:text-white pt-12 md:pt-6"
+                    id="t"
+                >
+                    <div class="px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
+                        <div class="max-w-xl">
+                            <h2 class="text-3xl font-bold sm:text-4xl">T</h2>
+                        </div>
+
+                        <div class="mt-4 md:mt-8 space-y-6"></div>
+                    </div>
+                </section>
+
+                <section
+                    class="bg-white dark:bg-gray-900 dark:text-white pt-12 md:pt-6"
+                    id="u"
+                >
+                    <div class="px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
+                        <div class="max-w-xl">
+                            <h2 class="text-3xl font-bold sm:text-4xl">U</h2>
+                        </div>
+
+                        <div class="mt-4 md:mt-8 space-y-6"></div>
+                    </div>
+                </section>
+
+                <section
+                    class="bg-gray-100 dark:bg-gray-800 dark:text-white pt-12 md:pt-6"
+                    id="v"
+                >
+                    <div class="px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
+                        <div class="max-w-xl">
+                            <h2 class="text-3xl font-bold sm:text-4xl">V</h2>
+                        </div>
+
+                        <div class="mt-4 md:mt-8 space-y-6"></div>
+                    </div>
+                </section>
+
+                <section
+                    class="bg-white dark:bg-gray-900 dark:text-white pt-12 md:pt-6"
+                    id="w"
+                >
+                    <div class="px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
+                        <div class="max-w-xl">
+                            <h2 class="text-3xl font-bold sm:text-4xl">W</h2>
+                        </div>
+
+                        <div class="mt-4 md:mt-8 space-y-6"></div>
+                    </div>
+                </section>
+
+                <section
+                    class="bg-gray-100 dark:bg-gray-800 dark:text-white pt-12 md:pt-6"
+                    id="x"
+                >
+                    <div class="px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
+                        <div class="max-w-xl">
+                            <h2 class="text-3xl font-bold sm:text-4xl">X</h2>
+                        </div>
+
+                        <div class="mt-4 md:mt-8 space-y-6"></div>
+                    </div>
+                </section>
+
+                <section
+                    class="bg-white dark:bg-gray-900 dark:text-white pt-12 md:pt-6"
+                    id="y"
+                >
+                    <div class="px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
+                        <div class="max-w-xl">
+                            <h2 class="text-3xl font-bold sm:text-4xl">Y</h2>
+                        </div>
+
+                        <div class="mt-4 md:mt-8 space-y-6"></div>
+                    </div>
+                </section>
+
+                <section
+                    class="bg-gray-100 dark:bg-gray-800 dark:text-white pt-12 md:pt-6"
+                    id="z"
+                >
+                    <div class="px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
+                        <div class="max-w-xl">
+                            <h2 class="text-3xl font-bold sm:text-4xl">Z</h2>
+                        </div>
+
+                        <div class="mt-4 md:mt-8 space-y-6"></div>
+                    </div>
+                </section>
+
+                <footer class="bg-white dark:bg-gray-900">
+                    <div class="px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
+                        <p class="text-xs text-gray-500 dark:text-gray-400">
+                            &copy; 2023-2024. farmacode. All rights reserved.
+                        </p>
+                    </div>
+                </footer>
+            </div>
+        </main>
+
+        <div
+            class="fixed z-50 right-4 bottom-4 invisible opacity-0"
+            id="back-to-top-glossario"
+        >
+            <button
+                class="inline-block rounded-lg bg-red-100 dark:bg-red-700 p-3 text-red-700 dark:text-red-100 hover:bg-red-300 dark:hover:bg-red-900 focus:outline-none focus:ring focus:ring-red-200 dark:focus:ring-red-600"
+                onclick="backToTopGlossario()"
+            >
+                <span class="sr-only"> Download </span>
+                <svg
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    class="h-5 w-5"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4.5 10.5L12 3m0 0l7.5 7.5M12 3v18"
+                    />
+                </svg>
+            </button>
+        </div>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
